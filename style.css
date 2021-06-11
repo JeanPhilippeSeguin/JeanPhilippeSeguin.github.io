@@ -1,0 +1,150 @@
+html{
+    padding:0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    height:100%;
+}
+.header-logo{
+    transition-duration: 0.3s;
+}
+.header-logo:hover{
+    transform:scale(1.2);
+    transition-duration:0.3s;
+}
+
+.header{
+    background-color:transparent;
+    height:15%;
+    border-top:8px solid #7000ff;
+    position:fixed;
+}
+.header-row{
+    height:100%;
+    background-color:white;
+    transition-duration:0.3s;
+}
+
+.nav-items{
+    list-style:none;
+    column-gap:25px; 
+    margin-right:25px;
+    font-size: 22px;
+    margin-top:10px;
+}
+.nav-links{
+    text-decoration:none;
+    color:black;
+    transition-duration: 0.15s;
+}
+
+#contactBtn{
+    border-color:#7000ff;
+    color:#7000ff;
+    font-size:22px;
+    transition-duration:0.3s;
+    margin-top:-8px;
+}
+#contactBtn:hover{
+    background-color:#7000ff;
+    color:white;
+    transition-duration:0.3s;
+}
+.nav-links:hover{
+   color:#7000ff;
+}
+.socialbuttons{
+    text-decoration:none;
+    color:black;
+    font-size:40px;
+    transition-duration:0.15s;
+    
+}
+.socialbuttons:hover{
+    color:#7000ff;
+    transition-duration:0.15s;
+}
+
+.introduction{
+    height:65%;
+    background-color:white;
+}
+.intro-row{
+    height:100%;
+}
+
+.intro-info{
+    font-family: 'Montserrat', sans-serif;
+    animation: animated-text 4s steps(26,end) 1s 1 normal both,
+               animated-cursor 600ms steps(26,end) infinite;
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    color: black;
+}
+.intro-info-p{
+    font-family: 'Montserrat', sans-serif;   
+}
+.project{
+    height:70%;
+}
+.project-info{
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+}
+.project-image{
+    height:90%;
+   right:0;
+}
+.info-1{
+    height:15%;
+}
+.info-2{
+    height:15%;
+}
+.info-3{
+    height:55%;
+}
+.info-4{
+    height:15%;
+}
+.projectTitle{
+    margin-left:40px;
+}
+.projectDate{
+    margin-left:40px;
+}
+.contact-cont{
+    height:65%;
+}
+.contact-info{
+    height:100%;
+}
+.contact-row1{
+    height:10%;
+}
+.contact-row2{
+    height:10%;
+}
+.contact-row3{
+    height:80%;
+}
+
+@keyframes bounce{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-30px);}
+    100%{transform:translateY(0)}
+}
+@keyframes fadein{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 486px;}
+  } 
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+  }
